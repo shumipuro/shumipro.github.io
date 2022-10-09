@@ -13,7 +13,7 @@ if(typeof setting === 'undefined'){
 }
 else{
     m = -6;
-    m = -20;
+    n = -20;
 }
 
 rank.slice(m).forEach(function(createElement){
