@@ -1,0 +1,607 @@
+1.プロフィール
+2.タイムライン(Twitter)
+3.人気記事
+4.新着記事
+5.更新履歴
+6.目次
+7.カテゴリー
+8.パンくず
+9.
+
+
+1.プロフィール
+///////////////////////////////////////////////////////////////////////////////////
+[html]
+<div class="profile">
+    <h3 class="profile-title">筆者について</h3>
+    <div class="profile-content">
+        <img src="https://saruwakakun.com/wp-content/uploads/2016/11/saruwakakun.jpg" width="80" height="80" alt="サルワカについて">
+        <dl class="profile-detail">
+            <dt itemprop="name">rikumomo0407</dt>
+            <dd itemprop="description">知っておきたい「暮らしの雑学」や「インターネットの知識」を分かりやすく解説していきます。</dd>
+        </dl>
+    </div>
+    <div class="mysns">
+        <a class="gmail-url" itemprop="sameAs" href="" target="_blank" rel="nofollow noopener noreferrer"><i class="fa-solid fa-envelope"></i>Gmail</a>
+        <a class="twitter-url" itemprop="sameAs" href="https://twitter.com/rikumomo0407" target="_blank" rel="nofollow noopener noreferrer"><i class="fa-brands fa-twitter"></i>Twitter</a>
+        <a class="github-url" itemprop="sameAs" href="https://github.com/rikumomo0407" target="_blank" rel="nofollow noopener noreferrer"><i class="fa-brands fa-github"></i>GitHub</a>
+    </div>
+</div>
+///////////////////////////////////////////////////////////////////////////////////
+[css]
+.profile{
+    max-width: 400px;
+    width: 100%;
+    background-color: white;
+}
+
+.profile-title{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+    color: white;
+    background-image: linear-gradient(to right, #de70fa 0%, #406cfe 100%);
+}
+
+.profile-content{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.profile-content img{
+    margin-right: 10px;
+}
+
+.profile-content dt{
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 700;
+    border-bottom: 1px solid black;
+}
+
+.mysns{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.mysns a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+}
+
+.mysns i{
+    margin-right: 10px;
+}
+
+.gmail-url{
+    background: red;
+}
+
+.twitter-url{
+    background-color: #00aced;
+}
+
+.github-url{
+    background-color: black;
+}
+
+@media screen and (max-width: 288px){
+    .profile-content{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .profile-detail{
+        text-align: center;
+    }
+}
+///////////////////////////////////////////////////////////////////////////////////
+
+2.タイムライン(Twitter)
+///////////////////////////////////////////////////////////////////////////////////
+[html]
+<div class="tweet">
+    <div class="tweet-setting"><a class="twitter-timeline" data-lang="ja" data-width="400" data-height="300" data-theme="light" href="https://twitter.com/rikumomo0407?ref_src=twsrc%5Etfw" data-chrome="noheader nofooter noscrollbar">Tweets by rikumomo0407</a>
+        <div class="hide-tweet">
+            <input type="checkbox" id="botton1"><label for="botton1">クリックしてツイートを表示</span>
+        </div>
+    </div>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+///////////////////////////////////////////////////////////////////////////////////
+[css]
+.tweet{
+    display: flex;
+    justify-content: center;
+    padding-top: 7.5px;
+    max-width: 415px;
+    width: 83vw;
+    height: 315px;
+    margin: 50px 20px;
+    background-image: linear-gradient(to bottom right, #70f1fa 0%, #4043fe 100%);
+}
+
+.tweet-setting{
+    position: relative;
+    max-width: 400px!important;
+    width: 80vw !important;
+}
+
+.tweet label{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.hide-tweet input{
+    display: none;
+}
+
+.hide-tweet input:checked + label{
+    display: none;
+}
+
+@media screen and (max-width: 320px){
+    .tweet{
+        background-image: none;
+    }
+}
+
+@media screen and (max-width: 288px){
+    .tweet:before{
+        height: 69px;
+    }
+}
+
+@media screen and (max-width: 200px){
+    .tweet{
+        display: none;
+    }
+}
+///////////////////////////////////////////////////////////////////////////////////
+
+3.人気記事
+///////////////////////////////////////////////////////////////////////////////////
+[html]
+<div class="contents-bar">
+    <span>人気記事</span>
+</div>
+<div class="cards">
+    <ul>
+        <li>
+            <a href="">
+                <article class="speciala">
+                    <img width="300" src="https://saruwakakun.com/wp-content/uploads/2017/home/basic-min.png" alt="テスト">
+                    <h4 class="post-title">まだ記事がありません</h4>
+                </article>
+            </a>
+        </li>
+    </ul>
+</div>
+///////////////////////////////////////////////////////////////////////////////////
+[css]
+.contents-bar{
+    height: 66px;
+    margin-bottom: 10px;
+    line-height: 66px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 140%;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    border-image-slice: 1;
+}
+
+.cards{
+    display: flex;
+}
+
+.cards ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.cards li{
+    list-style: none;
+    max-width: 326px;
+    padding: 13px;
+    margin-bottom: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+.cards li:nth-child(even){
+    margin-left: 12px;
+}
+
+.cards a{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 680px) {
+    .cards{
+        display: block;
+    }
+
+    .cards ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards li:nth-child(even){
+        margin-left: 0px;
+    }
+}
+///////////////////////////////////////////////////////////////////////////////////
+
+4.新着記事
+///////////////////////////////////////////////////////////////////////////////////
+[html]
+<div class="contents-bar">
+    <span>新着記事</span>
+</div>
+<div class="cards">
+    <ul>
+        <li>
+            <a href="">
+                <article class="speciala">
+                    <img width="300" src="https://saruwakakun.com/wp-content/uploads/2017/home/basic-min.png" alt="テスト">
+                    <h4 class="post-title">まだ記事がありません</h4>
+                </article>
+            </a>
+        </li>
+    </ul>
+</div>
+///////////////////////////////////////////////////////////////////////////////////
+[css]
+.contents-bar{
+    height: 66px;
+    margin-bottom: 10px;
+    line-height: 66px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 140%;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    border-image-slice: 1;
+}
+
+.cards{
+    display: flex;
+}
+
+.cards ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.cards li{
+    list-style: none;
+    max-width: 326px;
+    padding: 13px;
+    margin-bottom: 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+.cards li:nth-child(even){
+    margin-left: 12px;
+}
+
+.cards a{
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 680px) {
+    .cards{
+        display: block;
+    }
+
+    .cards ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards li:nth-child(even){
+        margin-left: 0px;
+    }
+}
+///////////////////////////////////////////////////////////////////////////////////
+
+5.更新履歴
+///////////////////////////////////////////////////////////////////////////////////
+[html]
+<div class="log">
+    <h4 class="log-title">更新履歴</h4>
+    <script async src="CMS\log.js"></script>
+    <ul></ul>
+</div>
+///////////////////////////////////////////////////////////////////////////////////
+[css]
+.log h4{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to right, #de70fa 0%, #406cfe 100%);
+}
+
+.log ul{
+    list-style: none;
+    padding-left: 0;
+    background-color: rgb(255, 255, 255);
+}
+///////////////////////////////////////////////////////////////////////////////////
+
+6.目次
+///////////////////////////////////////////////////////////////////////////////////
+[html]
+<div class="content-index">
+    <div class="index-title"><i class="fa-solid fa-list-ul"></i><h2>目次</h2></div>
+    <div class="index-main">
+        <ol>
+            <li><h3><a href="#jump1">見出し１</a></h3></li>
+            <ul>
+                <li><a href="#jump1a">見出し４</a></li>
+                <li>見出し５</li>
+            </ul>
+            <li><h3>見出し２</h3></li>
+            <li><h3>見出し３</h3></li>
+        </ol>
+    </div>
+</div>
+////////////////////////////////////////////////////////////////////////////////////
+[css]
+.content-index{
+    margin-bottom: 40px;
+    padding: 20px 0 10px 5%;
+    border-left: 10px solid #ffc778;
+    background-color: #fafafa;
+}
+
+.index-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.index-title i{
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    background-color: #ffc778;
+}
+
+.index-main a{
+    position: relative;
+    color: black;
+    text-decoration: none;
+}
+
+.index-main a:hover{
+    color: rgb(106, 106, 106);
+}
+
+.index-main a:hover:before{
+    position: absolute;
+    content: "クリックしてジャンプ";
+    top: -30px;
+    right: -180px;
+    width: 170px;
+    padding: 8px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    background: #30e852;
+}
+
+.index-main a:hover:after{
+    content: "";
+    position: absolute;
+    top: -5px; 
+    right: -20px;
+    border: 8px solid transparent;
+    border-left: 18px solid #30e852;
+    transform: rotate(145deg);
+}
+
+.index-main li{
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.index-main ul{
+    padding-left: 20px;
+}
+
+.index-main ul li{
+    list-style: disc;
+    font-weight: 500;
+}
+////////////////////////////////////////////////////////////////////////////////////
+
+7.カテゴリー
+////////////////////////////////////////////////////////////////////////////////////
+[html]
+<div class="category">
+    <div class="category-title"><h2>目次</h2></div>
+    <div class="category-main">
+        <ol>
+            <li><h3><a href="contents\announce.html"><i class="fa-solid fa-bullhorn"></i>アナウンス</a></h3></li>
+            <!-- <ul>
+                <li>見出し４</li>
+            </ul> -->
+        </ol>
+    </div>
+</div>
+////////////////////////////////////////////////////////////////////////////////////
+[css]
+.category{
+    width: 100%;
+    max-width: 400px;
+    margin: 50px 20px;
+    background-color: #fafafa;
+}
+
+.category-title{
+    text-align: center;
+    line-height: 40px;
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 100%);
+}
+
+.category-main ol{
+    padding: 0 25px 5px;
+    font-size: 15px;
+}
+
+.category-main i{
+    margin-right: 5px;
+    color: #f89174;
+}
+
+.category-main a{
+    color: black;
+    text-decoration: none;
+}
+
+.category-main a:hover{
+    color: #f89174;
+}
+
+.category-main a:hover:after{
+    content: "";
+    position: absolute;
+    top: -5px; 
+    right: -20px;
+    border: 8px solid transparent;
+    border-left: 18px solid #30e852;
+    transform: rotate(145deg);
+}
+
+.category-main li{
+    list-style: none;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.category-main ul{
+    padding-left: 20px;
+    color: #8a8a8a;
+}
+
+.category-main ul li{
+    position: relative;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.category-main ul li:before{
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: -15px;
+    width: 7px;
+    height: 7px;
+    border-top: solid 1px #8a8a8a;
+    border-right: solid 1px #8a8a8a;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+@media screen and (max-width: 320px){
+    .category-main ol{
+        padding: 0 5px 5px;
+    }
+}
+
+@media screen and (max-width: 288px){
+    .category-main i{
+        margin-right: 5px;
+        color: #f89174;
+    }
+}
+
+@media screen and (max-width: 265px){
+    .category-main i{
+        display: none;
+    }
+
+    .category-main ul{
+        padding-left: 0;
+    }
+}
+////////////////////////////////////////////////////////////////////////////////////
+
+8.パンくず
+////////////////////////////////////////////////////////////////////////////////////
+[html]
+<nav class="breadcrumb">
+    <ul>
+        <li><a href="..\..\index.html">ホーム</a></li>
+        <li><i class="fa-solid fa-chevron-right"></i></li>
+        <li><a href="..\announce.html">アナウンス</a></li>
+    </ul>
+</nav>
+////////////////////////////////////////////////////////////////////////////////////
+[css]
+.breadcrumb ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 20px 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.breadcrumb li:nth-child(odd){
+    margin: 0 10px;
+}
+
+.breadcrumb a{
+    color: black;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover{
+    color: rgb(140, 140, 140);
+}
+////////////////////////////////////////////////////////////////////////////////////
+
+9.
+////////////////////////////////////////////////////////////////////////////////////

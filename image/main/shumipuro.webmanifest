@@ -1,0 +1,7 @@
+{
+    "name": "シュミプロ",
+    "icons": [
+        { "src": "/icon-mini-white.png", "type": "image/png", "sizes": "192x192" },
+        { "src": "/icon-mini-white.png", "type": "image/png", "sizes": "512x512" }
+    ]
+}

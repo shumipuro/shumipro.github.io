@@ -1,0 +1,250 @@
+body{
+    width: 100%;
+    margin: 0;
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+    background-color: #f4f4f4;
+}
+
+.header{
+    display: block;
+    height: 70px;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    background-color: #ffffff;
+}
+
+.main{
+    display: block;
+    height: auto;
+    padding: 35px 0px;
+}
+
+.menu{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+}
+
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding-left: 0;
+    list-style: none;
+    font-weight: 700;
+    font-size: 100%;
+}
+
+.menu li{
+    width: 300px;
+    text-align: center;
+    background-color: white;
+}
+
+.menu li+ li{
+    margin-left: 2px;
+}
+
+.menu i{
+    margin-right: 10px;
+}
+
+.menu .distribute-botton{
+    color: rgb(94, 255, 91);
+    border-bottom: 3px solid rgb(94, 255, 91);
+}
+
+.menu .home-botton:hover{
+    border-bottom: 3px solid rgb(91, 176, 255);
+}
+
+.menu .home-botton a:hover{
+    color: rgb(91, 176, 255);
+}
+
+.menu .article-botton:hover{
+    border-bottom: 3px solid rgb(255, 170, 91);
+}
+
+.menu .article-botton a:hover{
+    color: rgb(255, 170, 91);
+}
+
+.menu a{
+    display: block;
+    color: rgb(161, 161, 161);
+    text-decoration: none;
+}
+
+.mid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+}
+
+.contents{
+    width: 664px;
+}
+
+.contents-bar{
+    height: 66px;
+    margin-bottom: 10px;
+    line-height: 66px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 140%;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, #70d5fa 0%, #92fe40 100%);
+    border-image-slice: 1;
+}
+
+.cards ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.cards li{
+    list-style: none;
+    max-width: 900px;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.cards li:nth-child(even){
+    margin-left: 12px;
+}
+
+.cards a{
+    color: black;
+    text-decoration: none;
+}
+
+.cards article{
+    display: flex;
+}
+
+.cards img{
+    margin-right: 10px;
+}
+
+.cards h4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .page{
+    padding-left: 20px;
+    margin-bottom: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+.page .page-num{
+    margin: 0px 5px;
+}
+
+.page .inactive{
+    color: black;
+    text-decoration: none;
+    margin-left: 10px;
+} */
+
+.log{
+    width: 200px;
+    margin-left: 40px;
+}
+
+.log h4{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to right, #de70fa 0%, #406cfe 100%);
+}
+
+.log ul{
+    list-style: none;
+    padding-left: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: rgb(66, 66, 66);
+    background-color: #ffffff;
+}
+
+
+@media screen and (max-width: 920px){
+    .main{
+        padding: 9px 0px;
+    }
+
+    .mid{
+        display: block;
+        margin: 0px;
+    }
+
+    .contents{
+        margin: 20px auto;
+    }
+
+    .log{
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 50px;
+        padding: 0 20%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .mid{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cards ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards li:nth-child(even){
+        margin-left: 0px;
+    }
+
+    .log{
+        padding: 0 15%;
+    }
+}
+
+@media screen and (max-width: 265px){
+    .menu span{
+        display: none;
+    }
+
+    .menu i{
+        margin-right: 0px;
+    }
+
+    .log{
+        padding: 0 10%;
+    }
+}
+
+@media screen and (max-width: 225px){
+    .cards img{
+        display: none;
+    }
+}
