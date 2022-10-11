@@ -290,8 +290,8 @@ body{
 }
 
 .prettyprint{
-    white-space: pre-wrap;
-    word-wrap: break-word;
+    padding: 10px;
+    overflow-x: auto;
     font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
     font-size: 14px;
 }
