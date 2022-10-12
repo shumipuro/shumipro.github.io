@@ -1,10 +1,10 @@
-var rank = ["<li><a href=\"contents\\announce\\000001.html\"><article><img width=\"300\" src=\"image\\000001\\making-website-blue.png\" alt=\"テスト\"><h4 class=\"post-title\">サイトを公開しました</h4></article></a></li>",
-"<li><a href=\"contents\\announce\\000001.html\"><article><img width=\"300\" src=\"image\\000001\\making-website-blue.png\" alt=\"テスト\"><h4 class=\"post-title\">サイトを公開しました</h4></article></a></li>",
-"<li><a href=\"contents\\announce\\000001.html\"><article><img width=\"300\" src=\"image\\000001\\making-website-blue.png\" alt=\"テスト\"><h4 class=\"post-title\">サイトを公開しました</h4></article></a></li>"];
+var rank = ["<li><a href=\"https://shumipuro.github.io/contents/announce/000001/open-our-site\"><article><img width=\"300\" src=\"contents\\announce\\000001\\making-website-blue.png\" alt=\"テスト\"><h4 class=\"post-title\">サイトを公開しました</h4></article></a></li>",
+"<li><a href=\"https://shumipuro.github.io/contents/announce/000001/open-our-site\"><article><img width=\"300\" src=\"contents\\announce\\000001\\making-website-blue.png\" alt=\"テスト\"><h4 class=\"post-title\">サイトを公開しました</h4></article></a></li>",
+"<li><a href=\"https://shumipuro.github.io/contents/announce/000001/open-our-site\"><article><img width=\"300\" src=\"contents\\announce\\000001\\making-website-blue.png\" alt=\"テスト\"><h4 class=\"post-title\">サイトを公開しました</h4></article></a></li>"];
 
-var latest = ["<li><a href=\"contents\\announce\\000001.html\"><article><img width=\"300\" src=\"image\\000001\\making-website-blue.png\" alt=\"テスト\"><h4 class=\"post-title\">サイトを公開しました</h4></article></a></li>",
-"<li><a href=\"contents\\announce\\000001.html\"><article><img width=\"300\" src=\"image\\000001\\making-website-blue.png\" alt=\"テスト\"><h4 class=\"post-title\">サイトを公開しました</h4></article></a></li>",
-"<li><a href=\"contents\\announce\\000001.html\"><article><img width=\"300\" src=\"image\\000001\\making-website-blue.png\" alt=\"テスト\"><h4 class=\"post-title\">サイトを公開しました</h4></article></a></li>"];
+var latest = ["<li><a href=\"https://shumipuro.github.io/contents/announce/000001/open-our-site\"><article><img width=\"300\" src=\"contents\\announce\\000001\\making-website-blue.png\" alt=\"テスト\"><h4 class=\"post-title\">サイトを公開しました</h4></article></a></li>",
+"<li><a href=\"https://shumipuro.github.io/contents/announce/000001/open-our-site\"><article><img width=\"300\" src=\"contents\\announce\\000001\\making-website-blue.png\" alt=\"テスト\"><h4 class=\"post-title\">サイトを公開しました</h4></article></a></li>",
+"<li><a href=\"https://shumipuro.github.io/contents/announce/000001/open-our-site\"><article><img width=\"300\" src=\"contents\\announce\\000001\\making-website-blue.png\" alt=\"テスト\"><h4 class=\"post-title\">サイトを公開しました</h4></article></a></li>"];
 
 var m,n;
 if(typeof setting === 'undefined'){
