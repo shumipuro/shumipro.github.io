@@ -6,8 +6,8 @@ var rank = [
 
 var latest = [
 "<li><a href=\"https://shumipro.netlify.app/contents/announce/000002/open-our-site\"><article><img width=\"300\" src=\"https://shumipro.netlify.app/image/main/noimage.png\" alt=\"記事\"><h4 class=\"post-title\">当サイトについて</h4></article></a></li>",
-"<li><a href=\"https://shumipro.netlify.app/contents/announce/000002/open-our-site\"><article><img width=\"300\" src=\"https://shumipro.netlify.app/contents/announce/000002/noimage.png\" alt=\"記事\"><h4 class=\"post-title\">当サイトについて</h4></article></a></li>",
-"<li><a href=\"https://shumipro.netlify.app/contents/announce/000002/open-our-site\"><article><img width=\"300\" src=\"C:/Users/rikum/Desktop/programs/front-end/mysite/home/contents//announce/000002/noimage.png\" alt=\"記事\"><h4 class=\"post-title\">当サイトについて</h4></article></a></li>"
+"<li><a href=\"https://shumipro.netlify.app/contents/announce/000002/open-our-site\"><article><img width=\"300\" src=\"https://shumipro.netlify.app/image/main/noimage.png\" alt=\"記事\"><h4 class=\"post-title\">当サイトについて</h4></article></a></li>",
+"<li><a href=\"https://shumipro.netlify.app/contents/announce/000002/open-our-site\"><article><img width=\"300\" src=\"https://shumipro.netlify.app/image/main/noimage.png\" alt=\"記事\"><h4 class=\"post-title\">当サイトについて</h4></article></a></li>"
 ];
 
 rank.forEach(function(createElement){
